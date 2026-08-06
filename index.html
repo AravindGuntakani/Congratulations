@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Congratulations Madam Ji</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    height:100vh;
+    overflow:hidden;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:linear-gradient(135deg,#ffe8f3,#fff7e6,#eef9ff);
+    font-family:'Segoe UI',sans-serif;
+}
+
+.photo{
+    width:180px;
+    height:180px;
+    object-fit:cover;
+    border-radius:50%;
+    border:6px solid #ff9fc7;
+    margin-bottom:20px;
+}
+
+/* Floating emojis */
+.pet{
+    position:absolute;
+    font-size:70px;
+    animation:float 4s ease-in-out infinite;
+}
+
+.cat1{top:30px;left:40px;}
+.cat2{bottom:30px;right:40px;animation-delay:1s;}
+.dog1{top:30px;right:40px;animation-delay:.5s;}
+.dog2{bottom:30px;left:40px;animation-delay:1.5s;}
+
+@keyframes float{
+    0%,100%{transform:translateY(0px);}
+    50%{transform:translateY(-18px);}
+}
+
+.card{
+    background:rgba(255,255,255,.75);
+    backdrop-filter:blur(10px);
+    padding:60px 80px;
+    border-radius:25px;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+    text-align:center;
+}
+
+h1{
+    color:#ff5f9e;
+    font-size:3.2rem;
+    animation:glow 2s infinite alternate;
+}
+
+@keyframes glow{
+    from{text-shadow:0 0 10px #ffd1e6;}
+    to{text-shadow:0 0 25px #ff7fb5;}
+}
+</style>
+</head>
+
+<body>
+
+<div class="pet cat1">🐱</div>
+<div class="pet dog1">🐶</div>
+<div class="pet cat2">😺</div>
+<div class="pet dog2">🐕</div>
+  
+
+<div class="card">
+    <img src="rashila.jpg" class="photo">
+    <h1>🌸 Congratulations Madam Ji! 🌸</h1>
+</div>
+
+</body>
+</html>
